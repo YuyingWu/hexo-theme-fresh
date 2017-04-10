@@ -1,0 +1,27 @@
+{
+  "name": "hexo-theme-fresh",
+  "version": "0.1.0",
+  "description": "Anther medium-like Hexo theme based on Swig and Sass - fresh.",
+  "homepage": "",
+  "keywords": [
+    "hexo",
+    "hexo theme",
+    "swig",
+    "scss",
+    "fresh",
+    "medium"
+  ],
+  "author": {
+    "name": "Yuying Wu",
+    "email": "wuyuying1128@gamil.com",
+    "url": "https://wuyuying.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.1.2",
+    "node-sass": "^3.4.2",
+    "postcss": "^5.0.12",
+    "postcss-js": "^0.1.0",
+    "uglify-js": "^2.6.1"
+  }
+}

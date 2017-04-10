@@ -1,0 +1,126 @@
+$margin: 15px;
+
+#header {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 30px 0;
+
+  background: $color-background;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  .center {
+    .wrap {
+      display: table;
+
+      width: 100%;
+      > * {
+        display: table-cell;
+
+        vertical-align: bottom;
+      }
+    }
+    a {
+      color: inherit;
+      &.github {
+        display: inline-block;
+
+        vertical-align: -2px;
+
+        color: #9e9e9e;
+        &:hover {
+          color: inherit;
+        }
+        .octicon {
+          fill: currentColor;
+        }
+      }
+    }
+  }
+}
+
+#site {
+  h1 {
+    margin: $margin 0;
+  }
+  h2 {
+    font-size: 1em;
+    color: $color-meta;
+    margin: $margin 0;
+  }
+}
+
+#menu {
+  overflow: hidden;
+  ul {
+    float: right;
+    overflow: hidden;
+
+    margin: $margin 0;
+    padding: 0;
+
+    list-style: none;
+    li {
+      float: left;
+
+      margin-left: 50px;
+      a {
+        font-size: 14px;
+        &:hover {
+          color: $color-link-hover;
+        }
+      }
+    }
+  }
+}
+
+#header.small {
+  padding: 0;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+  h1 {
+    // font-size: 1.5em;
+  }
+  h2 {
+    display: none;
+  }
+  svg.octicon.octicon-mark-github {
+    width: 22px;
+    height: 22px;
+  }
+  #menu ul {
+    margin: 22px 0;
+  }
+}
+
+@media screen and (max-width: $width-phone) {
+  #header {
+    position: absolute;
+
+    padding-bottom: 10px;
+  }
+  #site,
+  #menu {
+    display: block !important;
+  }
+  #site {
+    h1 {
+      // font-size: 1.5em;
+    }
+  }
+  #menu {
+    margin-top: 15px;
+    ul {
+      float: none;
+      li {
+        margin-right: 30px;
+        margin-left: 0;
+        a {
+          // font-size: 16px;
+        }
+      }
+    }
+  }
+}

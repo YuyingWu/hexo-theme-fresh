@@ -1,0 +1,27 @@
+.article{
+	.post-meta{
+		color: $color-meta;
+		font-size: $font-size-meta;
+		a{
+			color: $color-meta;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	.more-link{
+		font-size: $font-size-meta;
+		color: $color-meta;
+		&:after{
+			content: '...';
+		}
+	}
+	blockquote{
+		border-left: 3px solid rgba(0,0,0,.8);
+		padding-left: 20px;
+		margin-left: -23px;
+	}
+	img{
+		width: 100%;
+	}
+}

@@ -1,0 +1,10 @@
+menu:
+#  home: /
+#  archive: /archives/
+
+widgets:
+- category
+- tag
+- search
+
+excerpt_link: Read More
