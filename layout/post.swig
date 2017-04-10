@@ -5,6 +5,10 @@
 
 {% extends 'ancestor.swig' %}
 
+{% block bodyClass %}class="page-post"{% endblock %}
+
+{% block header %}{% endblock %}
+
 {% block primary %}
 
 	{% set pipe = {

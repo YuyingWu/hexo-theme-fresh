@@ -98,7 +98,7 @@ $margin: 15px;
 @media screen and (max-width: $width-phone) {
   #header {
     position: absolute;
-
+    padding-top: 10px;
     padding-bottom: 10px;
   }
   #site,

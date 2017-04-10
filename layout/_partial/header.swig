@@ -16,6 +16,7 @@
 					</h2>
 				{{ endif }}
 			</div>
+			{% if theme.menu.length %}
 			<nav id="menu">
 				<ul>
 					{% for menu in theme.menu %}
@@ -23,6 +24,7 @@
 					{% endfor %}
 				</ul>
 			</nav>
+			{% endif %}
 		</div>
 	</div>
 </header>

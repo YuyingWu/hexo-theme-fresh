@@ -7,7 +7,10 @@ background: $color-background;
 }
 
 body {
-  padding-top: 190px;
+    padding-top: 164px;
+    @media screen and (max-width: $width-phone) {
+        padding-top: 124px;
+    } 
 }
 
 a{
@@ -21,7 +24,7 @@ a{
 }
 
 p{
-    line-height: 1.58;
+    line-height: 2;
     font-size: 1em;
 }
 
@@ -103,20 +106,26 @@ p{
 }
 
 h1{
-    font-size: 2em;
-}
-h2{
     font-size: 1.8em;
 }
-h3{
+h2{
     font-size: 1.6em;
 }
-h4{
+h3{
     font-size: 1.4em;
 }
-h5{
+h4{
     font-size: 1.2em;
 }
+h5,
 h6{
     font-size: 1em;
+}
+
+code{
+    border: 1px solid $color-border;
+    border-radius: $border-radius;
+    padding: 0 4px;
+    margin: 0 4px;
+    word-break: break-word;
 }

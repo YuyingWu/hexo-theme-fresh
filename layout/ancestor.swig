@@ -19,7 +19,10 @@
 	<title>{% block title %}{{ config.title }} - {{ config.subtitle }}{% endblock %}</title>
 </head>
 <body {% block bodyClass %}{% endblock %}>
-{% include '_partial/header.swig' %}
+
+{% block header %}
+	{% include '_partial/header.swig' %}
+{% endblock %}
 
 <div id="content">
 	<div class="center">

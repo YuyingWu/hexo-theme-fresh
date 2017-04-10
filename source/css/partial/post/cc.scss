@@ -1,0 +1,17 @@
+.wgt-post-copyright{
+	color: $color-meta;
+	a{
+		text-decoration: none!important;
+		color: $color-meta;
+	}
+	.license-img{
+		display: block;
+	}
+	img{
+		margin: inherit;
+		width: auto;
+	}
+	.caption{
+		text-align: left;
+	}
+}

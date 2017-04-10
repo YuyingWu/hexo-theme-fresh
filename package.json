@@ -19,9 +19,15 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.1.2",
+    "cz-conventional-changelog": "^2.0.0",
     "node-sass": "^3.4.2",
     "postcss": "^5.0.12",
     "postcss-js": "^0.1.0",
     "uglify-js": "^2.6.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

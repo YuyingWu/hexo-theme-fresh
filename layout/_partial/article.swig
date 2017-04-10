@@ -1,11 +1,6 @@
 <article class="article {{ item.layout }} {{ className }}">
 	<div class="post-content">
 		<header>
-			<div class="post-meta">
-				{% include 'post/category.swig' %}
-				{% include 'post/tag.swig' %}
-			</div>
-
 			{% include 'post/title.swig' with pipe %}
 			{% include 'post/meta.swig' %}
 		</header>
@@ -14,6 +9,8 @@
 				{{ item.excerpt }}
 			{% else %}
 				{{ item.content }}
+
+				{% include 'post/cc.swig' %}
 			{% endif %}
 		</div>
 		<footer class="clearfix">
