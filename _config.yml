@@ -10,3 +10,5 @@ widgets:
 copyright_start: 2014
 
 excerpt_link: Read More
+
+skip_render: node_modules/*

@@ -12,8 +12,8 @@
 	<meta name="description" content="{{ config.description }}">
 
 	{% block stylesheet %}
-		<link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/build/css/font-awesome.css">
+		<link rel="stylesheet" href="/build/css/style.css">
 	{% endblock %}
 
 	<title>{% block title %}{{ config.title }} - {{ config.subtitle }}{% endblock %}</title>
@@ -35,8 +35,8 @@
 
 {% include '_partial/footer.swig' %}
 
-<script src="/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="/js/header-animate.js"></script>
+<script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+<script src="/build/js/aio.js"></script>
 
 {% block scripts %}{% endblock %}
 
