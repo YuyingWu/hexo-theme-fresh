@@ -27,11 +27,23 @@ p{
     line-height: 2;
     font-size: 1em;
 }
-
-.center {
-    min-width: 300px;
+.wide-center{
+    width: 100%;
     max-width: $width-wide;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center {
+    width: 100%;
+    min-width: 300px;
+    max-width: $width-normal;
+    margin-left: auto;
+    margin-right: auto;
+    .entry{
+        a{
+            text-decoration: underline;
+        }
+    }
 }
 
 #postPrev,

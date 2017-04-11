@@ -1,0 +1,14 @@
+.page-post{
+	padding-top: 30px;
+}
+.post--widget{
+	font-size: 0.8em;
+	color: $color-meta;
+	border: 1px solid $color-border;
+	border-radius: $border-radius;
+	padding: 10px;
+	margin-bottom: 10px;
+	a{
+		color: $color-meta;
+	}
+}

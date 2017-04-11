@@ -10,7 +10,10 @@
 			{% else %}
 				{{ item.content }}
 
-				{% include 'post/cc.swig' %}
+				{% if item.layout == 'post' %}
+					{% include 'post/donate.swig' %}
+					{% include 'post/cc.swig' %}
+				{% endif %}
 			{% endif %}
 		</div>
 		<footer class="clearfix">

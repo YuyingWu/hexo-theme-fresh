@@ -1,5 +1,5 @@
 <header id="header">
-	<div class="center">
+	<div class="wide-center">
 		<div class="wrap">
 			<div id="site">
 				<h1>
