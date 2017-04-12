@@ -1,4 +1,4 @@
-<section class="post--widget wgt-donate">
+<section class="post__widget wgt-donate">
 	<p>
 		<strong>码字辛苦求打赏 >> </strong>
 

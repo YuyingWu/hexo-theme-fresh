@@ -1,16 +1,20 @@
 // Color
 $color-background: #fff;
 $color-font: #0d0000;
-$color-meta: rgba(0,0,0,.44);
+
 $color-border: #7c848c;
 $color-link: #000;
 $color-link-hover: #000;
 
 // custom
-$color-base: #00ab6b;
+$color-font-base: rgba(0, 0, 0, 0.7);
+$color-font-strong: #000;
 $font-size-meta: 12px;
 $border-radius: 3px;
 $gutter: 20px;
+$color-meta: rgba(0,0,0,.44);
+$color-highlight: rgba(233, 253, 240, 1);
+$color-accent: #02B875;
 
 // Font
 $font-default: 'Microsoft Yahei', sans-serif;

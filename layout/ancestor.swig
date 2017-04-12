@@ -33,7 +33,11 @@
 	</div>
 </div>
 
-{% include '_partial/footer.swig' %}
+{% block footer %}
+	{% include '_partial/footer.swig' %}
+{% endblock %}
+
+{% block afterFooter %}{% endblock %}
 
 {# <script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
 <script src="/build/js/aio.js"></script> #}

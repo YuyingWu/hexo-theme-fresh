@@ -1,5 +1,5 @@
 {% if item.categories && item.categories.length %}
-	<section class="post__widget">
+	<section class="post__meta">
 		<i class="fa fa-folder"></i>
 		<span>{{ __('category') }}：</span>
 		{% for category in item.categories %}

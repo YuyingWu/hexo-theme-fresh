@@ -10,7 +10,6 @@
 {% block header %}{% endblock %}
 
 {% block primary %}
-
 	{% set pipe = {
 		item: page,
 		unTitleLink: true,
@@ -18,9 +17,12 @@
 	} %}
 
 	{% include '_partial/article.swig' with pipe %}
-
 {% endblock %}
 
-{% block extendElement %}
-	{% include '_partial/header.swig' with {atBottom: true} %}
+{% block footer %}{% endblock %}
+
+{% block afterFooter %}
+	{% include '_partial/header.swig' with {
+		className: 'header--bottom post__header'
+	} %}
 {% endblock %}

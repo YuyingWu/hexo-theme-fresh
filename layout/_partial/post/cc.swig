@@ -1,4 +1,4 @@
-<footer class="post--widget wgt-post-copyright">
+<footer class="post__widget wgt-post-copyright">
 	<div class="license-cc">
 		<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" class="license-img">
 			<img alt="知识共享许可协议" style="border-width:0" src="http://cdn.sinacloud.net/woodysblog/blog/cc.png" />

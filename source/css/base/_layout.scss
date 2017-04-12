@@ -6,13 +6,6 @@ html {
 background: $color-background;
 }
 
-/* body {
-    padding-top: 164px;
-    @media screen and (max-width: $width-phone) {
-        padding-top: 124px;
-    } 
-} */
-
 a{
     text-decoration: none;
     color: $color-link;
@@ -38,11 +31,6 @@ li{
     max-width: $width-normal;
     margin-left: auto;
     margin-right: auto;
-    .entry{
-        a{
-            text-decoration: underline;
-        }
-    }
 }
 
 #postPrev,
@@ -123,17 +111,15 @@ li{
 }
 
 h1{
-    font-size: 1.8em;
-}
-h2{
     font-size: 1.6em;
 }
-h3{
+h2{
     font-size: 1.4em;
 }
-h4{
+h3{
     font-size: 1.2em;
 }
+h4,
 h5,
 h6{
     font-size: 1em;
@@ -145,4 +131,9 @@ code{
     padding: 0 4px;
     margin: 0 4px;
     word-break: break-word;
+}
+
+.p--highlight{
+    background-color: $color-highlight;
+    font-style: normal;
 }

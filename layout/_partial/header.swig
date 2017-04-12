@@ -1,4 +1,4 @@
-<header{% if atBottom %} class="header--bottom"{% endif %}>
+<header{% if className %} class="{{ className }}"{% endif %}>
 	<section class="u-clearfix wide-center header__container">
 		<nav class="grid-r">
 			<ul class="u-clearfix header__nav--list">
