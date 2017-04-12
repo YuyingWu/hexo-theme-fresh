@@ -1,5 +1,22 @@
+$gutter: 20px;
 .archive-title {
   font-weight: normal;
 
   color: $color-meta;
+}
+.archive-article{
+	margin-bottom: $gutter;
+	time,
+	h1{
+		float: left;
+		margin: 0;
+		font-size: 1em;
+	}
+	time{
+		color: $color-meta;
+		font-weight: 200;
+	}
+	h1{
+		margin-left: $gutter;
+	}
 }
