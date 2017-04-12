@@ -3,6 +3,11 @@
 		<header>
 			{% include 'post/title.swig' with pipe %}
 			{% include 'post/meta.swig' %}
+
+			{% if !index && item.layout == 'post' %}
+				{% include 'post/category.swig' %}
+				{% include 'post/tag.swig' %}
+			{% endif %}
 		</header>
 		<div class="entry">
 			{% if item.excerpt && index %}

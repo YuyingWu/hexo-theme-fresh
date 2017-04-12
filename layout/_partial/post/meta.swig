@@ -1,4 +1,4 @@
-<div class="post-meta">
+<div class="post__widget">
 	<time datetime="{{ item.date.toDate().toISOString() }}">{{ item.date.format(config.date_format) }}</time>
 
 	{% if item.readTime %}

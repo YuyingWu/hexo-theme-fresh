@@ -20,3 +20,7 @@
 	{% include '_partial/article.swig' with pipe %}
 
 {% endblock %}
+
+{% block extendElement %}
+	{% include '_partial/header.swig' with {atBottom: true} %}
+{% endblock %}

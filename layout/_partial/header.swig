@@ -1,30 +1,34 @@
-<header id="header">
-	<div class="wide-center">
-		<div class="wrap">
-			<div id="site">
-				<h1>
-					<a href="{{ config.root }}">{{ config.title }}</a>
-					{% if theme.github %}
-						<a class="github" href="https://github.com/{{ theme.github }}">
-	  					<svg aria-hidden="true" class="octicon octicon-mark-github" height="28" role="img" version="1.1" viewBox="0 0 16 16" width="28"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
-						</a>
-					{% endif %}
-				</h1>
-				{% if config.subtitle %}
-					<h2>
-						<a href="{{ config.root }}">{{ config.subtitle }}</a>
-					</h2>
-				{{ endif }}
-			</div>
-			{% if theme.menu.length %}
-			<nav id="menu">
-				<ul>
-					{% for menu in theme.menu %}
-						<li><a href="{{ menu }}">{{ __(loop.key) }}</a></li>
-					{% endfor %}
-				</ul>
-			</nav>
-			{% endif %}
+<header{% if atBottom %} class="header--bottom"{% endif %}>
+	<section class="u-clearfix wide-center header__container">
+		<nav class="grid-r">
+			<ul class="u-clearfix header__nav--list">
+				{% for menu in theme.menu %}
+					<li><a href="{{ menu }}">{{ __(loop.key) }}</a></li>
+				{% endfor %}
+			</ul>
+		</nav>
+
+		<div class="grid">
+			<h1>
+			<a href="{{ config.root }}">
+			<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+			 width="40px" height="40px" viewBox="0 0 100.000000 100.000000"
+			 preserveAspectRatio="xMidYMid meet">
+			<g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)"
+			fill="#000000" stroke="none">
+			<path d="M320 673 c-7 -32 -19 -78 -27 -102 -10 -30 -11 -46 -4 -50 6 -4 12
+			-58 13 -131 l3 -125 38 -3 37 -3 0 168 c0 116 5 185 15 223 21 78 20 80 -24
+			80 l-40 0 -11 -57z"/>
+			<path d="M473 712 c-55 -4 -56 -22 -2 -22 39 0 40 -1 35 -27 -3 -16 -8 -54
+			-12 -85 l-6 -58 72 1 c51 1 75 -3 81 -13 11 -16 12 -208 2 -209 -5 0 -59 -1
+			-120 -2 -62 -1 -113 -5 -113 -9 0 -5 72 -8 160 -8 l160 0 0 113 c0 138 -5 146
+			-99 149 l-62 2 6 50 c10 72 14 88 20 95 3 3 37 5 76 3 40 -1 69 3 69 8 0 6
+			-12 10 -27 11 -16 0 -66 1 -113 2 -47 1 -104 1 -127 -1z"/>
+			</g>
+			</svg>
+			<span>{{ config.title }}</span>
+			</a>
+			</h1>
 		</div>
-	</div>
-</header>
+	</section>
+</header><!-- /header -->

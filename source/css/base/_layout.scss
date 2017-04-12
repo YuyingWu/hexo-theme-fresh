@@ -6,12 +6,12 @@ html {
 background: $color-background;
 }
 
-body {
+/* body {
     padding-top: 164px;
     @media screen and (max-width: $width-phone) {
         padding-top: 124px;
     } 
-}
+} */
 
 a{
     text-decoration: none;
@@ -23,18 +23,17 @@ a{
     }
 }
 
-p{
+p,
+li{
     line-height: 2;
     font-size: 1em;
 }
 .wide-center{
-    width: 100%;
     max-width: $width-wide;
     margin-left: auto;
     margin-right: auto;
 }
 .center {
-    width: 100%;
     min-width: 300px;
     max-width: $width-normal;
     margin-left: auto;
@@ -82,6 +81,12 @@ p{
     }
 }
 
+.grid{
+    float: left;
+}
+.grid-r{
+    float: right;
+}
 .u-clearfix {
     &::after {
         display: block;

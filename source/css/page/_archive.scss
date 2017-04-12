@@ -15,8 +15,15 @@ $gutter: 20px;
 	time{
 		color: $color-meta;
 		font-weight: 200;
+		margin-right: $gutter;
 	}
-	h1{
-		margin-left: $gutter;
-	}
+	@media screen and (max-width: $width-phone) {
+		time,
+		h1{
+			float: initial;
+		}
+		h1{
+			margin-top: 5px;
+		}
+    }
 }

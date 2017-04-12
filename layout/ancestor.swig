@@ -35,8 +35,8 @@
 
 {% include '_partial/footer.swig' %}
 
-<script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
-<script src="/build/js/aio.js"></script>
+{# <script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+<script src="/build/js/aio.js"></script> #}
 
 {% block scripts %}{% endblock %}
 

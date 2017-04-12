@@ -1,14 +1,5 @@
+$post-widget-gutter: 0.67em; 
 .article{
-	.post-meta{
-		color: $color-meta;
-		font-size: $font-size-meta;
-		a{
-			color: $color-meta;
-			&:hover{
-				text-decoration: underline;
-			}
-		}
-	}
 	.more-link{
 		font-size: $font-size-meta;
 		color: $color-meta;
@@ -27,5 +18,14 @@
 	}
 	img{
 		max-width: 100%;
+	}
+	.post__widget{
+		color: $color-meta;
+		font-size: $font-size-meta;
+		margin-bottom: $post-widget-gutter;
+		a{
+			color: $color-meta;
+			text-decoration: none;
+		}
 	}
 }
