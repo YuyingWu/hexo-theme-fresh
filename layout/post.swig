@@ -7,8 +7,6 @@
 
 {% block bodyClass %}class="page-post"{% endblock %}
 
-{% block header %}{% endblock %}
-
 {% block primary %}
 	{% set pipe = {
 		item: page,
@@ -17,12 +15,4 @@
 	} %}
 
 	{% include '_partial/article.swig' with pipe %}
-{% endblock %}
-
-{% block footer %}{% endblock %}
-
-{% block afterFooter %}
-	{% include '_partial/header.swig' with {
-		className: 'header--bottom post__header'
-	} %}
 {% endblock %}

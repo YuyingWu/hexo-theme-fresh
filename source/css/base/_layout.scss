@@ -1,11 +1,15 @@
 html {
-  font:  {
-    family: $font-default;
+    font:  {
+        family: $font-default;
+    }
+    background: $color-background;
 }
-
-background: $color-background;
+body{
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-
 a{
     text-decoration: none;
     color: $color-link;
@@ -65,7 +69,7 @@ li{
 
 @media screen and (max-width: $width-phone) {
     .center {
-        margin: 0 10px;
+        margin: 0 $mobile-gutter;
     }
 }
 

@@ -55,9 +55,9 @@
 
       border: 1px solid $color-border;
       border-radius: 2px;
-      background: #eee;
+      background: #23241f;
       @media screen and (max-width: $width-phone) {
-        margin: 15px -11px 0;
+        margin: 15px (-$mobile-gutter) 0;
       }
       figcaption {
         margin-bottom: 5px;
@@ -98,7 +98,6 @@
     }
     .code {
       padding: 0 0 0 15px;
-
       color: #2e2e2e;
       border-left: 1px solid #fff;
       @media screen and (max-width: $width-phone) {
@@ -108,11 +107,12 @@
     }
     .line {
       line-height: 20px;
+      color: #fff;
     }
   }
   pre {
-    // Theme: Solarized - Light
-    // More theme here: http://softwaremaniacs.org/media/soft/highlight/test.html
+    // Theme: Monokai Sublime
+    // More theme here: https://highlightjs.org/static/demo/
     .comment,
     .template_comment,
     .diff .header,
@@ -122,8 +122,7 @@
     .javadoc {
       font-family: $font-serif;
       font-style: italic;
-
-      color: #93a1a1;
+      color: #75715e;
     }
 
     .keyword,
@@ -134,7 +133,7 @@
     .request,
     .status,
     .nginx .title {
-      color: #c6cc02;
+      color: #f92672;
     }
 
     .number,
@@ -145,7 +144,7 @@
     .tex .formula,
     .regexp,
     .hexcolor {
-      color: #00af3c;
+      color: #f8f8f2;
     }
 
     .title,
@@ -157,7 +156,7 @@
     .vhdl,
     .literal,
     .id {
-      color: #27928f;
+      color: #a6e22e;
     }
 
     .attribute,
@@ -168,9 +167,11 @@
     .class .title,
     .parent,
     .haskell .type {
-      color: #0e0f24;
+      color: #66d9ef;
     }
-
+    .selector-class{
+      color: #a6e22e;
+    }
     .preprocessor,
     .preprocessor .keyword,
     .shebang,
@@ -183,11 +184,11 @@
     .subst,
     .cdata,
     .clojure .title {
-      color: #8e3539;
+      color: #66d9ef;
     }
 
     .deletion {
-      color: #da0c30;
+      color: #75715e;
     }
   }
 }

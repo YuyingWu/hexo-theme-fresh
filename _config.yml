@@ -1,5 +1,6 @@
 menu:
  archive: /archives/
+ About: /about.html
 
 widgets:
 - category

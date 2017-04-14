@@ -1,4 +1,4 @@
-<footer class="wgt-footer">
+<footer class="wgt-footer" id="footer">
 	<div class="center">
 		&copy; 
 		{%if theme.copyright_start %}{{ theme.copyright_start}}-{% endif %}{{ moment(Date.now()).format('YYYY') }}
