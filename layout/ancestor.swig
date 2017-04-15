@@ -12,8 +12,7 @@
 	<meta name="description" content="{{ config.description }}">
 
 	{% block stylesheet %}
-		<link rel="stylesheet" href="/build/css/font-awesome.css">
-		<link rel="stylesheet" href="/build/css/style.css">
+	<link rel="stylesheet" href="/build/css/post.css">
 	{% endblock %}
 
 	<title>{% block title %}{{ config.title }} - {{ config.subtitle }}{% endblock %}</title>
@@ -32,6 +31,10 @@
 		{% block extendElement %}{% endblock %}
 	</div>
 </div>
+
+{% block styleFontawesome %}
+	<link rel="stylesheet" href="/build/css/font-awesome.css">
+{% endblock %}
 
 {% block footer %}
 	{% include '_partial/footer.swig' %}

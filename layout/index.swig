@@ -4,6 +4,10 @@
 
 {% block bodyClass %}class="page-index"{% endblock %}
 
+{% block stylesheet %}
+<link rel="stylesheet" href="/build/css/index.css">
+{% endblock %}
+
 {% block primary %}
 	<section class="u-maxWidth640 u-marginAuto">
 		{% for post in page.posts %}

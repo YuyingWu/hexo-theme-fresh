@@ -5,6 +5,10 @@
 
 {% extends 'ancestor.swig' %}
 
+{% block stylesheet %}
+<link rel="stylesheet" href="/build/css/post.css">
+{% endblock %}
+
 {% block bodyClass %}class="page-post"{% endblock %}
 
 {% block primary %}

@@ -6,10 +6,23 @@ module.exports = function(grunt){
 			/*options: {
             	sourceMap: true
 	        },*/
+	        /*dist: {
+	        	files: {
+	        		'source/build/css/post.css': [
+						'source/css/page/_post.scss'
+					]
+	        	}
+	        }*/
 			dist: {
 				files: {
-					'source/build/css/style.css': [
-						'source/css/style.scss'
+					'source/build/css/post.css': [
+						'source/css/post.scss'
+					],
+					'source/build/css/archive.css': [
+						'source/css/archive.scss'
+					],
+					'source/build/css/index.css': [
+						'source/css/index.scss'
 					]
 					// 'path/to/another.css': ['path/to/sources/*.styl', 'path/to/more/*.styl'] // compile and concat into single file 
 				}
