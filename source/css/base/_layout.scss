@@ -13,10 +13,8 @@ body{
 a{
     text-decoration: none;
     color: $color-link;
-    font-weight: 400;
     &:hover{
         text-shadow: 0 0 2px rgba(0, 0, 0, .15);
-        font-weight: 600;
     }
 }
 

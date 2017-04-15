@@ -2,6 +2,23 @@ module.exports = function(grunt){
 	require('load-grunt-tasks')(grunt);
 
 	grunt.initConfig({
+		babel: {
+	        options: {
+	            presets: [
+	                'babel-preset-es2015'
+	            ]
+	        },
+	        dist: {
+	            files: {
+	                'source/build/js/test.js': 'source/js/test.es'
+	            }
+	        },
+	        test: {
+	            files: {
+	                'source/build/js/test.js': 'source/js/test.es'
+	            }
+	        }
+	    },
 		sass: {
 			/*options: {
             	sourceMap: true
@@ -68,6 +85,10 @@ module.exports = function(grunt){
 			js: {
 				files: 'source/js/**/**.js',
 				tasks: ['uglify']
+			},
+			es: {
+				files: 'source/js/**/**.es',
+				tasks: ['babel']
 			}
 		}
 	});
@@ -82,13 +103,15 @@ module.exports = function(grunt){
 		'sass',
 		'uglify',
 		'copy',
-		'watch'
+		'watch',
+		'babel'
 	]);
 
 	grunt.registerTask('default', [
 		'sass',
 		'copy',
-		'uglify',
-		'cssmin'
+		'cssmin',
+		'babel',
+		'uglify'
 	]);
 }
