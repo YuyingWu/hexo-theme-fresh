@@ -1,7 +1,23 @@
 module.exports = function(grunt){
 	require('load-grunt-tasks')(grunt);
 
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-concat');
+
 	grunt.initConfig({
+		concat: {
+			options: {
+				separator: ';',
+			},
+			dist: {
+				src: [
+					'source/build/js/modules.js',
+					'source/build/js/main.js'
+				],
+				dest: 'source/build/js/aio.js'
+			},
+		},
 		babel: {
 	        options: {
 	            presets: [
@@ -10,12 +26,8 @@ module.exports = function(grunt){
 	        },
 	        dist: {
 	            files: {
-	                'source/build/js/test.js': 'source/js/test.es'
-	            }
-	        },
-	        test: {
-	            files: {
-	                'source/build/js/test.js': 'source/js/test.es'
+	                'source/build/js/modules.js': 'source/js/modules/**.js',
+	                'source/build/js/main.js': 'source/js/main.js'
 	            }
 	        }
 	    },
@@ -23,13 +35,6 @@ module.exports = function(grunt){
 			/*options: {
             	sourceMap: true
 	        },*/
-	        /*dist: {
-	        	files: {
-	        		'source/build/css/post.css': [
-						'source/css/page/_post.scss'
-					]
-	        	}
-	        }*/
 			dist: {
 				files: {
 					'source/build/css/post.css': [
@@ -41,7 +46,6 @@ module.exports = function(grunt){
 					'source/build/css/index.css': [
 						'source/css/index.scss'
 					]
-					// 'path/to/another.css': ['path/to/sources/*.styl', 'path/to/more/*.styl'] // compile and concat into single file 
 				}
 			}
 		},
@@ -49,7 +53,7 @@ module.exports = function(grunt){
 			dist: {
 				files: {
 					'source/build/js/aio.js': [
-						'source/js/header-animate.js'
+						'source/build/js/**.js'
 					]
 				}
 			}
@@ -75,6 +79,10 @@ module.exports = function(grunt){
 			fa: {
 				src: ['source/css/lib/_font-awesome.css'],
 				dest: 'source/build/css/font-awesome.css'
+			},
+			lib: {
+				src: 'source/lib/mod.js',
+				dest: 'source/build/js/lib/mod.js'
 			}
 		},
 		watch: {
@@ -84,11 +92,7 @@ module.exports = function(grunt){
 			},
 			js: {
 				files: 'source/js/**/**.js',
-				tasks: ['uglify']
-			},
-			es: {
-				files: 'source/js/**/**.es',
-				tasks: ['babel']
+				tasks: ['babel', 'concat']
 			}
 		}
 	});
@@ -96,22 +100,21 @@ module.exports = function(grunt){
 	grunt.event.on('watch', function(action, filepath, target) {
     	grunt.log.writeln(target + ': ' + filepath + ' has ' + action);
     });
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-cssmin');
 
 	grunt.registerTask('dev', [
 		'sass',
-		'uglify',
 		'copy',
-		'watch',
-		'babel'
+		'babel',
+		'concat',
+		'watch'
 	]);
 
 	grunt.registerTask('default', [
 		'sass',
 		'copy',
-		'cssmin',
 		'babel',
+		'concat',
+		'cssmin',
 		'uglify'
 	]);
 }

@@ -33,7 +33,7 @@
 </div>
 
 {% block styleFontawesome %}
-	<link rel="stylesheet" href="/build/css/font-awesome.css">
+<link rel="stylesheet" href="/build/css/font-awesome.css">
 {% endblock %}
 
 {% block footer %}
@@ -45,7 +45,11 @@
 {# <script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
 <script src="/build/js/aio.js"></script> #}
 
-{% block scripts %}{% endblock %}
+<script type="text/javascript" src="/build/js/lib/mod.js"></script>
+
+{% block scripts %}
+<script type="text/javascript" src="/build/js/aio.js"></script>
+{% endblock %}
 
 </body>
 </html>
