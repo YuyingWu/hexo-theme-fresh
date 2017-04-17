@@ -1,8 +1,10 @@
 $headerWrapperHeight: 40px;
 .header__container{
     padding: $gutter/2 $gutter;
-    box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+    box-shadow: 0 2px 2px -2px $color-box-shadow;
     margin-bottom: $gutter;
+    height: $headerWrapperHeight \9;
+    border-bottom: 1px solid #F5F5F5 \9;
     h1{
         margin: 0; 
         height: $headerWrapperHeight;
@@ -26,6 +28,6 @@ $headerWrapperHeight: 40px;
 .header--bottom{
     .header__container{
         margin-bottom: 0;
-        box-shadow: 0 -2px 2px -2px rgba(0,0,0,.15);
+        box-shadow: 0 -2px 2px -2px $color-box-shadow;
     }
 }

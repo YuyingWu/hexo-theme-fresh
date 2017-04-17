@@ -16,8 +16,19 @@
 	{% endblock %}
 
 	<title>{% block title %}{{ config.title }} - {{ config.subtitle }}{% endblock %}</title>
+
+	<!--[if lte IE 8]>
+        <script>
+            (function(){
+                var e="abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(","),
+                i=e.length;
+                while(i--){document.createElement(e[i])}
+             })();
+        </script>
+    <![endif]-->
 </head>
 <body {% block bodyClass %}{% endblock %}>
+{% include '_widget/old-browser.swig' %}
 
 {% block header %}
 	{% include '_partial/header.swig' %}
@@ -44,12 +55,5 @@
 
 {# <script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
 <script src="/build/js/aio.js"></script> #}
-
-<script type="text/javascript" src="/build/js/lib/mod.js"></script>
-
-{% block scripts %}
-<script type="text/javascript" src="/build/js/aio.js"></script>
-{% endblock %}
-
 </body>
 </html>

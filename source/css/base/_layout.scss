@@ -13,8 +13,9 @@ body{
 a{
     text-decoration: none;
     color: $color-link;
+    outline: 0;
     &:hover{
-        text-shadow: 0 0 2px rgba(0, 0, 0, .15);
+        text-shadow: 0 0 2px $color-box-shadow;
     }
 }
 
@@ -46,10 +47,10 @@ li{
     text-align: center;
     color: $color-meta;
     border-radius: 3px;
-    background: rgba(0, 0, 0, .3);
+    background: #8F8F8F;
     &:hover {
         color: #fff;
-        background: rgba(0, 0, 0, .8);
+        background: #292929;
     }
 }
 #postPrev {

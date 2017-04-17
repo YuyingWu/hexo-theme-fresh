@@ -81,8 +81,10 @@ module.exports = function(grunt){
 				dest: 'source/build/css/font-awesome.css'
 			},
 			lib: {
-				src: 'source/lib/mod.js',
-				dest: 'source/build/js/lib/mod.js'
+				expand: true,
+				cwd: 'source/lib/',
+				src: '**',
+				dest: 'source/build/js/lib'
 			}
 		},
 		watch: {
