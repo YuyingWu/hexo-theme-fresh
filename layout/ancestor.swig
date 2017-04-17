@@ -44,7 +44,7 @@
 </div>
 
 {% block styleFontawesome %}
-<link rel="stylesheet" href="/build/css/font-awesome.css">
+<link rel="stylesheet" href="/build/css/iconfont.css">
 {% endblock %}
 
 {% block footer %}

@@ -77,8 +77,8 @@ module.exports = function(grunt){
         		dest: 'source/build/fonts'
 			},
 			fa: {
-				src: ['source/css/lib/_font-awesome.css'],
-				dest: 'source/build/css/font-awesome.css'
+				src: ['source/css/lib/_iconfont.css'],
+				dest: 'source/build/css/iconfont.css'
 			},
 			lib: {
 				expand: true,
