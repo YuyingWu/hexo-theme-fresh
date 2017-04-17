@@ -37,13 +37,13 @@ module.exports = function(grunt){
 	        },*/
 			dist: {
 				files: {
-					'source/build/css/post.css': [
+					'source/build/css/post_201704171545.css': [
 						'source/css/post.scss'
 					],
-					'source/build/css/archive.css': [
+					'source/build/css/archive_201704171545.css': [
 						'source/css/archive.scss'
 					],
-					'source/build/css/index.css': [
+					'source/build/css/index_201704171545.css': [
 						'source/css/index.scss'
 					]
 				}
@@ -52,7 +52,7 @@ module.exports = function(grunt){
 		uglify: {
 			dist: {
 				files: {
-					'source/build/js/aio.js': [
+					'source/build/js/aio_201704171545.js': [
 						'source/build/js/**.js'
 					]
 				}
@@ -78,7 +78,7 @@ module.exports = function(grunt){
 			},
 			fa: {
 				src: ['source/css/lib/_iconfont.css'],
-				dest: 'source/build/css/iconfont.css'
+				dest: 'source/build/css/iconfont_201704171545.css'
 			},
 			lib: {
 				expand: true,

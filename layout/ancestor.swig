@@ -12,7 +12,7 @@
 	<meta name="description" content="{{ config.description }}">
 
 	{% block stylesheet %}
-	<link rel="stylesheet" href="/build/css/post.css">
+	<link rel="stylesheet" href="/build/css/post_201704171545.css">
 	{% endblock %}
 
 	<title>{% block title %}{{ config.title }} - {{ config.subtitle }}{% endblock %}</title>
@@ -44,7 +44,7 @@
 </div>
 
 {% block styleFontawesome %}
-<link rel="stylesheet" href="/build/css/iconfont.css">
+<link rel="stylesheet" href="/build/css/iconfont_201704171545.css">
 {% endblock %}
 
 {% block footer %}

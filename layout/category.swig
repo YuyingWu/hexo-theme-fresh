@@ -3,7 +3,7 @@
 {% extends 'ancestor.swig' %}
 
 {% block stylesheet %}
-<link rel="stylesheet" href="/build/css/archive.css">
+<link rel="stylesheet" href="/build/css/archive_201704171545.css">
 {% endblock %}
 
 {% block primary %}

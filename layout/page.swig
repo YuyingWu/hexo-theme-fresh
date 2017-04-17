@@ -8,7 +8,7 @@
 {% block bodyClass %}class="page-page"{% endblock %}
 
 {% block stylesheet %}
-<link rel="stylesheet" href="/build/css/post.css">
+<link rel="stylesheet" href="/build/css/post_201704171545.css">
 {% endblock %}
 
 {% block primary %}
