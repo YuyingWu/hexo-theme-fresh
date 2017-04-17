@@ -28,7 +28,7 @@ $post-widget-gutter: 0.67em;
 		margin-left: -23px;
 		width: 95%;
 		@media screen and (max-width: $width-phone) {
-			margin-left: -$mobile-gutter;
+			margin-left: -18px;
     	}
 	}
 	img{
@@ -44,7 +44,6 @@ $post-widget-gutter: 0.67em;
 		}
 	}
 	.post__widget{
-		// font-size: $post-widget-gutter;
 		color: $color-meta;
 		border: 1px solid $color-border;
 		border-radius: $border-radius;
@@ -56,10 +55,6 @@ $post-widget-gutter: 0.67em;
 		p{
 			margin: 0;
 		}
-		@media screen and (max-width: $width-phone) {
-			margin-left: -$mobile-gutter;
-			margin-right: -$mobile-gutter;
-    	}
 	}
 }
 .post__tag{
