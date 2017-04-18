@@ -12,14 +12,18 @@ $post-widget-gutter: 0.67em;
 		img{
 			text-align: center;
 		}
-	}
-	.excerpt--more{
-		display: block;
-		font-size: $font-size-meta;
-		color: $color-accent;
-		margin-top: $gutter;
-		&:after{
-			content: '...';
+		a{
+	        text-decoration: underline;
+	    }
+	    .excerpt--more{
+			display: block;
+			font-size: $font-size-meta;
+			color: $color-accent;
+			margin-top: $gutter;
+			text-decoration: none;
+			&:after{
+				content: '...';
+			}
 		}
 	}
 	blockquote{

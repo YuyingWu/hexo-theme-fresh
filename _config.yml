@@ -1,6 +1,7 @@
 menu:
- archive: /archives/
- About: /about.html
+  demo: http://demo.wuyuying.com/
+  archive: /archives/
+  About: /about.html
 
 widgets:
 - category

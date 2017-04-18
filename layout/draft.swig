@@ -8,8 +8,6 @@
 {% block primary %}
 
 	{% set pipe = {item: page, unTitleLink: true} %}
-	{% include '_partial/article.swig' with pipe %}
-
-	{% include '_partial/disqus.swig' %}
+	{% include '_partial/post-detail/article.swig' with pipe %}
 
 {% endblock %}

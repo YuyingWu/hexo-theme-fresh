@@ -5,7 +5,7 @@
 {% block bodyClass %}class="page-index"{% endblock %}
 
 {% block stylesheet %}
-<link rel="stylesheet" href="/build/css/index_201704171545.css">
+<link rel="stylesheet" href="/build/css/index{% include '_common/timestamp.swig' %}.css">
 {% endblock %}
 
 {% block primary %}
@@ -17,7 +17,7 @@
 				className: "post-index"
 			} %}
 
-			{% include '_partial/article.swig' with pipe %}
+			{% include '_partial/post-excerpt/article.swig' with pipe %}
 		{% endfor %}
 
 		{% include '_partial/pagination.swig' %}

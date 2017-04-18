@@ -8,12 +8,12 @@
 {% block bodyClass %}class="page-page"{% endblock %}
 
 {% block stylesheet %}
-<link rel="stylesheet" href="/build/css/post_201704171545.css">
+<link rel="stylesheet" href="/build/css/post{% include '_common/timestamp.swig' %}.css">
 {% endblock %}
 
 {% block primary %}
 
 	{% set pipe = {item: page, unTitleLink: true} %}
-	{% include '_partial/article.swig' with pipe %}
+	{% include '_partial/post-detail/article.swig' with pipe %}
 
 {% endblock %}
