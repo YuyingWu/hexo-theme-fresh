@@ -11,7 +11,7 @@
 	<div class="articlePhoto__content">
 		{% include "../post/title.swig" with { unTitleLink: true } %}
 
-		<p>{{ item.excerpt }}</p>
+		<div class="articlePhoto__excerpt">{{ item.excerpt }}</div>
 
 		{% include "../post/meta.swig"%}
 	</div>

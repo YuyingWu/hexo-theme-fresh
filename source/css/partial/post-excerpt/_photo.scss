@@ -38,3 +38,13 @@
 		font-size: 2em;
 	}
 }
+@media screen and (max-width: $width-phone) {
+	.articlePhoto__excerpt{
+		display: none;
+	}
+	.articlePhoto__content{
+		.title{
+			font-size: 1.4em;
+		}
+	}
+}

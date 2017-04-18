@@ -43,7 +43,7 @@
 	</div>
 </div>
 
-<link rel="stylesheet" href="/build/css/iconfont{% include '_common/timestamp.swig' %}.css">
+<link rel="stylesheet" href="/build/css/iconfont_201704181501.css">
 
 {% block footer %}
 	{% include '_partial/footer.swig' %}
