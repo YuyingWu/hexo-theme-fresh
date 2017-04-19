@@ -28,6 +28,10 @@
     <![endif]-->
 </head>
 <body {% block bodyClass %}{% endblock %}>
+{% if theme.ga %}
+{% include '_widget/google-analytics.swig' %}
+{% endif %}
+
 {% include '_widget/old-browser.swig' %}
 
 {% block header %}
