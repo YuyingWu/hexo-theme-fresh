@@ -13,7 +13,9 @@
 		&nbsp;|&nbsp;
 		{% include "social.swig" %}
 		</p>
-		<p>Powered by 
+		<p>
+			{%if theme.footer_info %}{{ theme.footer_info}}&nbsp;{% endif %}
+			Powered by 
 			<a href="https://hexo.io" target="_blank">Hexo</a>, using theme 
 			<a href="https://github.com/YuyingWu/hexo-theme-fresh" 
 				target="_blank">Fresh</a>
