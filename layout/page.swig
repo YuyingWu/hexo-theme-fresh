@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="/build/css/post{% include '_common/timestamp.swig' %}.css">
 {% endblock %}
 
+{% block title %}{{ page.title }} - {{ config.title }}{% endblock %}
+
 {% block primary %}
 
 	{% set pipe = {item: page, unTitleLink: true} %}

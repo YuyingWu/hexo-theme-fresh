@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="/build/css/post{% include '_common/timestamp.swig' %}.css">
 {% endblock %}
 
+{% block title %}{{ page.title }} - {{ config.title }}{% endblock %}
+
 {% block bodyClass %}class="page-post"{% endblock %}
 
 {% block primary %}
