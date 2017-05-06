@@ -20,4 +20,13 @@
 		className: 'article-post'
 	} %}
 	{% include '_partial/post-detail/article.swig' with pipe %}
+
+	{% include '_widget/comment.swig' with pipe %}
+{% endblock %}
+
+{% block afterFooter %}
+<script src="http://cdn1.lncld.net/static/js/2.1.4/av-min.js"></script>
+<script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+<script src="http://cdn.bootcss.com/moment.js/2.18.1/moment.min.js"></script>
+<script src="/build/js/comment.js"></script>
 {% endblock %}
