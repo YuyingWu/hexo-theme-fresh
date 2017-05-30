@@ -3,10 +3,10 @@ module.exports = function(grunt){
 
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.loadNpmTasks('grunt-contrib-concat');
+	// grunt.loadNpmTasks('grunt-contrib-concat');
 
 	grunt.initConfig({
-		concat: {
+		/*concat: {
 			options: {
 				separator: ';',
 			},
@@ -17,8 +17,8 @@ module.exports = function(grunt){
 				],
 				dest: 'source/build/js/aio.js'
 			},
-		},
-		babel: {
+		},*/
+		/*babel: {
 	        options: {
 	            presets: [
 	                'babel-preset-es2015'
@@ -30,7 +30,7 @@ module.exports = function(grunt){
 	                'source/build/js/main.js': 'source/js/main.js'
 	            }
 	        }
-	    },
+	    },*/
 		sass: {
 			/*options: {
             	sourceMap: true
@@ -91,11 +91,11 @@ module.exports = function(grunt){
 			css: {
 				files: 'source/css/**/**.scss',
 				tasks: ['sass']
-			},
+			}/*,
 			js: {
-				files: 'source/js/**/**.js',
+				files: 'source/js/**\/**.js',
 				tasks: ['babel', 'concat']
-			}
+			}*/
 		}
 	});
 
@@ -106,16 +106,16 @@ module.exports = function(grunt){
 	grunt.registerTask('dev', [
 		'sass',
 		'copy',
-		'babel',
-		'concat',
+		/*'babel',
+		'concat',*/
 		'watch'
 	]);
 
 	grunt.registerTask('default', [
 		'sass',
 		'copy',
-		'babel',
-		'concat',
+		/*'babel',
+		'concat',*/
 		'cssmin',
 		'uglify'
 	]);
