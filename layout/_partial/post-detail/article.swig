@@ -11,8 +11,11 @@
 
 		<footer>
 			{% include '../post/tag.swig' %}
-			{% include '../post/donate.swig' %}
-			{% include '../post/cc.swig' %}
+			{% include '../post/shield.swig' %}
 		</footer>
+
+		{% if !index && item.layout == 'post' %}
+			{% include '../comment.swig' with pipe %}
+		{% endif %}
 	</div>
 </article>

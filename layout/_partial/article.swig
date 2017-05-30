@@ -21,8 +21,7 @@
 		</div>
 		{% if !index && item.layout == 'post' %}
 			{% include 'post/tag.swig' %}
-			{% include 'post/donate.swig' %}
-			{% include 'post/cc.swig' %}
+			{% include 'post/shield.swig' %}
 		{% endif %}
 	</div>
 </article>
