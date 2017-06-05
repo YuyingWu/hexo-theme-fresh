@@ -1,6 +1,6 @@
 {# 标签归档 #}
 
-{% extends 'ancestor.swig' %}
+{% extends '_layout.swig' %}
 
 {% block stylesheet %}
 <link rel="stylesheet" href="/build/css/archive{% include '_common/timestamp.swig' %}.css">

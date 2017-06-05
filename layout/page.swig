@@ -3,7 +3,7 @@
 	/source/**.md 文章使用此模板
 #}
 
-{% extends 'ancestor.swig' %}
+{% extends '_layout.swig' %}
 
 {% block bodyClass %}class="page-page"{% endblock %}
 

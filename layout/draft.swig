@@ -3,7 +3,7 @@
 	/source/_drafts/**.md 使用此模板
 #}
 
-{% extends 'ancestor.swig' %}
+{% extends '_layout.swig' %}
 
 {% block primary %}
 

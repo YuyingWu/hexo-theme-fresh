@@ -1,6 +1,6 @@
 {# 首页 #}
 
-{% extends 'ancestor.swig' %}
+{% extends '_layout.swig' %}
 
 {% block bodyClass %}class="page-index"{% endblock %}
 

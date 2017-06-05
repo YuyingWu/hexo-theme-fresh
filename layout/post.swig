@@ -3,7 +3,7 @@
 	/source/_posts/**.md 使用此模板
 #}
 
-{% extends 'ancestor.swig' %}
+{% extends '_layout.swig' %}
 
 {% block stylesheet %}
 <link rel="stylesheet" href="/build/css/post{% include '_common/timestamp.swig' %}.css">
