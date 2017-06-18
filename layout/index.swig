@@ -5,7 +5,7 @@
 {% block bodyClass %}class="page-index"{% endblock %}
 
 {% block stylesheet %}
-<link rel="stylesheet" href="/build/css/index{% include '_common/timestamp.swig' %}.css">
+<link rel="stylesheet" href="/blog/build/css/pages/index{% include '_common/timestamp.swig' %}.css">
 {% endblock %}
 
 {% block primary %}

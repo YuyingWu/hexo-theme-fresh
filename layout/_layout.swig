@@ -12,7 +12,7 @@
 	<meta name="description" content="{{ config.description }}">
 
 	{% block stylesheet %}
-	<link rel="stylesheet" href="/build/css/post{% include '_common/timestamp.swig' %}.css">
+	<link rel="stylesheet" href="/blog/build/css/pages/post{% include '_common/timestamp.swig' %}.css">
 	{% endblock %}
 
 	<title>{% block title %}{{ config.title }} - {{ config.subtitle }}{% endblock %}</title>
@@ -47,7 +47,7 @@
 	</div>
 </div>
 
-<link rel="stylesheet" href="/build/css/iconfont_201704181501.css">
+<link rel="stylesheet" href="/blog/build/css/iconfont_201704181501.css">
 
 {% block footer %}
 	{% include '_partial/footer.swig' %}

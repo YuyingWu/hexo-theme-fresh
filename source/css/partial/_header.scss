@@ -1,29 +1,43 @@
-$headerWrapperHeight: 40px;
+$headerWrapperHeight: 56px;
 .header__container{
-    padding: $gutter/2 $gutter;
-    box-shadow: 0 2px 2px -2px $color-box-shadow;
+    // box-shadow: 0 2px 2px -2px $color-box-shadow;
     margin-bottom: $gutter;
-    height: $headerWrapperHeight \9;
-    border-bottom: 1px solid #F5F5F5 \9;
+    height: $headerWrapperHeight;
+    line-height: $headerWrapperHeight;
+    // border-bottom: 1px solid #F5F5F5 \9;
+    background: #2e928a;
     h1{
         margin: 0; 
-        height: $headerWrapperHeight;
-        line-height: $headerWrapperHeight;
-        span{
-            vertical-align: top;
+        padding: 0 15px;
+        font-weight: 400;
+        font-size: 24px;
+        a{
+            color: #fff;
         }
     }
 }
 .header__nav--list{
     margin-top: 0;
     margin-bottom: 0;
-    li{
+    a{
+        display: inline-block;
+        min-width: 50px;
+        padding: 0 15px;
+        text-align: center;
+        color: #fff;
+        &:hover,
+        &:active {
+            background: rgba(255,255,255,0.3);
+        }
+
+    }
+    /* li{
         float: left;
         list-style: none;
         margin-right: 10px;
         height: $headerWrapperHeight;
         line-height: $headerWrapperHeight;
-    }
+    } */
 }
 .header--bottom{
     .header__container{

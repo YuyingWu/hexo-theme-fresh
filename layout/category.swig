@@ -3,7 +3,7 @@
 {% extends '_layout.swig' %}
 
 {% block stylesheet %}
-<link rel="stylesheet" href="/build/css/archive{% include '_common/timestamp.swig' %}.css">
+<link rel="stylesheet" href="/blog/build/css/pages/archive{% include '_common/timestamp.swig' %}.css">
 {% endblock %}
 
 {% block primary %}

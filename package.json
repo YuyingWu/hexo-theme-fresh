@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Anther medium-like Hexo theme based on Swig and Sass - fresh.",
   "homepage": "",
+  "scripts": {
+    "sass": "sass --watch source/css:source/build/tmp/css"
+  },
   "keywords": [
     "hexo",
     "hexo theme",
@@ -17,9 +20,10 @@
     "url": "https://wuyuying.com"
   },
   "license": "MIT",
-  "devDependencies": {
+  "devDependencies1": {
     "cz-conventional-changelog": "^2.0.0",
     "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^2.0.0",
     "grunt-contrib-uglify": "^2.3.0",
@@ -33,5 +37,13 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2"
   }
 }

@@ -1,4 +1,4 @@
-<section id="wgt-comment" class="wgt-comment" data-permalink="{{ url_for(item.path) }}">
+<section id="wgt-comment" class="wgt-comment" data-permalink="/{{ item.path }}">
 	<div id="comment-list">
 		<article>暂无数据</article>
 	</div>
