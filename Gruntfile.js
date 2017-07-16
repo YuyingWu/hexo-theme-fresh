@@ -15,7 +15,7 @@ module.exports = function(grunt){
 					cwd: 'source/build/tmp/css',
 					src: ['*.css', '!*.min.css'],
 					dest: 'source/build/css/pages',
-					ext: '_201706181942.css'
+					ext: '_201707122346.css'
 				}]
 			}
 		},
