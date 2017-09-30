@@ -60,11 +60,11 @@ li{
   right: 0;
 }
 
-@media screen and (max-width: $width-wide + 60) {
-    .center {
-        margin: 0 30px;
-    }
-}
+// @media screen and (max-width: $width-wide + 60) {
+//     .center {
+//         margin: 0 30px;
+//     }
+// }
 
 @media screen and (max-width: $width-phone) {
     .center {
