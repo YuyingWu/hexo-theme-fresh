@@ -1,10 +1,11 @@
 {
   "name": "hexo-theme-fresh",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "description": "Anther medium-like Hexo theme based on Swig and Sass - fresh.",
   "homepage": "",
   "scripts": {
-    "sass": "sass --watch source/css:source/build/tmp/css"
+    "dev": "parcel watch ./source/js/test.js -d ./source/dist",
+    "build": "set NODE_ENV=production && parcel build ./source/js/test.js -d ./source/dist"
   },
   "keywords": [
     "hexo",
@@ -20,30 +21,8 @@
     "url": "https://wuyuying.com"
   },
   "license": "MIT",
-  "devDependencies1": {
-    "cz-conventional-changelog": "^2.0.0",
-    "grunt": "^1.0.1",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^2.0.0",
-    "grunt-contrib-uglify": "^2.3.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-sass": "^2.0.0",
-    "load-grunt-tasks": "^3.5.2",
-    "node-sass": "^3.4.2",
-    "uglify-js": "^2.6.1"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^2.2.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "load-grunt-tasks": "^3.5.2"
+    "babel-preset-env": "^1.6.1",
+    "parcel-bundler": "^1.3.0"
   }
 }
