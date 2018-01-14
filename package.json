@@ -4,8 +4,6 @@
   "description": "Anther medium-like Hexo theme based on Swig and Sass - fresh.",
   "homepage": "",
   "scripts": {
-    "dev": "parcel watch ./source/js/test.js -d ./source/dist",
-    "build": "set NODE_ENV=production && parcel build ./source/js/test.js -d ./source/dist"
   },
   "keywords": [
     "hexo",

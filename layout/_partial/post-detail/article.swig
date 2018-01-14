@@ -5,7 +5,14 @@
 			{% include '../post/meta.swig' %}
 			{% include '../post/category.swig' %}
 		</header>
+
 		<div class="entry">
+			<aside class="wgt-toc">
+				<header>
+					<p><i class="iconfont icon-folder"></i>&nbsp;文章大纲</p>
+				</header>
+				{{ toc(item.content) }}
+			</aside>
 			{{ item.content }}
 		</div>
 

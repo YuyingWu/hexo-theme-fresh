@@ -8,7 +8,7 @@
 {% block bodyClass %}class="page-page"{% endblock %}
 
 {% block stylesheet %}
-<link rel="stylesheet" href="/blog/build/css/pages/post{% include '_common/timestamp.swig' %}.css">
+<link rel="stylesheet" href="/blog/css/post.css">
 {% endblock %}
 
 {% block title %}{{ page.title }} - {{ config.title }}{% endblock %}

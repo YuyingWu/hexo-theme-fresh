@@ -12,7 +12,8 @@ copyright_start: 2014
 
 excerpt_link: Read More
 
-skip_render: node_modules
+skip_render: 
+- node_modules/*
 
 # GOOGLE ANALYTICS
 ga: UA-74424222-1
