@@ -8,7 +8,7 @@
 {% block bodyClass %}class="page-page"{% endblock %}
 
 {% block stylesheet %}
-<link rel="stylesheet" href="/blog/css/post.css">
+<link rel="stylesheet" href="{{ config.root }}/css/post.css">
 {% endblock %}
 
 {% block title %}{{ page.title }} - {{ config.title }}{% endblock %}

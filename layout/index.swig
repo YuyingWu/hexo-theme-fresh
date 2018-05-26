@@ -5,7 +5,7 @@
 {% block bodyClass %}class="page-index"{% endblock %}
 
 {% block stylesheet %}
-<link rel="stylesheet" href="/blog/css/index.css">
+<link rel="stylesheet" href="{{ config.root }}/css/index.css">
 {% endblock %}
 
 {% block primary %}

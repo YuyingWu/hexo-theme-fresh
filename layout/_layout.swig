@@ -12,7 +12,7 @@
 	<meta name="description" content="{{ config.description }}">
 
 	{% block stylesheet %}
-	<link rel="stylesheet" href="/blog/build/css/pages/post{% include '_common/timestamp.swig' %}.css">
+	<link rel="stylesheet" href="{{ config.root }}/build/css/pages/post{% include '_common/timestamp.swig' %}.css">
 	{% endblock %}
 
 	<title>{% block title %}{{ config.title }} - {{ config.subtitle }}{% endblock %}</title>
@@ -47,7 +47,7 @@
 	</div>
 </div>
 
-<link rel="stylesheet" href="/blog/build/css/iconfont_201704181501.css">
+<link rel="stylesheet" href="{{ config.root }}/build/css/iconfont_201704181501.css">
 
 {% block footer %}
 	{% include '_partial/footer.swig' %}
@@ -55,12 +55,12 @@
 
 {% block afterFooter %}{% endblock %}
 
-<script src="http://sinacloud.net/woodysblog/statics/lazyload.js"></script>
+<script src="//sinacloud.net/woodysblog/statics/lazyload.js"></script>
 <script>
 	new LazyLoad({
 		threshold: 600
 	});
 </script>
-<script src="/blog/dist/base.js"></script>
+<script src="{{ config.root }}/dist/base.js"></script>
 </body>
 </html>

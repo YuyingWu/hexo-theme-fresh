@@ -6,7 +6,7 @@
 {% extends '_layout.swig' %}
 
 {% block stylesheet %}
-<link rel="stylesheet" href="/blog/css/post.css">
+<link rel="stylesheet" href="{{ config.root }}/css/post.css">
 {% endblock %}
 
 {% block title %}{{ page.title }} - {{ config.title }}{% endblock %}
@@ -26,5 +26,5 @@
 <script src="http://cdn1.lncld.net/static/js/2.1.4/av-min.js"></script>
 <script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
 <script src="http://cdn.bootcss.com/moment.js/2.18.1/moment.min.js"></script>
-<script src="/blog/build/js/comment.js"></script>
+<script src="{{ config.root }}/build/js/comment.js"></script>
 {% endblock %}
