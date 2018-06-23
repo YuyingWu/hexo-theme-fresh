@@ -2,6 +2,8 @@
 
 Yet another Hexo theme - Fresh.
 
+![](https://github.com/YuyingWu/hexo-theme-fresh/blob/master/screenshot.gif)
+
 ## development
 
 ```
